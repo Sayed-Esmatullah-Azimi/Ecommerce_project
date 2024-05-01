@@ -20,7 +20,7 @@ function Register() {
       });
     useEffect(()=>{
         if(localStorage.getItem('user-info')){
-            navigate("/add");
+            navigate("/");
         }
         
     },[])
@@ -40,7 +40,7 @@ function Register() {
     result = await result.json();
     localStorage.setItem("user-info",JSON.stringify(result));
     // history.push("/add");
-    navigate("/add");
+    navigate("/");
     }
     return(
        <>
